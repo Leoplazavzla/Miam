@@ -1,0 +1,148 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons start>
+      <ion-button icon-only>
+        <ion-icon name="contact"></ion-icon>  
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title text-center>
+      MIAM
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content text-center>
+      <h1>Hora de Cocinar!</h1>
+      <p>Ingresa tus ingredientes</p>
+    </ion-card-content>
+  </ion-card>
+    <ion-card>
+    <ion-card-content>
+      <!-- Search Bar -->
+      <ion-searchbar (ionInput)="getItems($event)" placeholder="Ingresa un ingrediente"></ion-searchbar>
+      <ion-list>
+        <ion-item *ngFor="let item of items">
+            {{ item }}
+          </ion-item>
+        </ion-list>
+        
+        <!-- FIn de Search Bar -->
+        
+        <ion-list>
+          
+          <ion-item>
+            <ion-input type="text" placeholder="Tomate"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-input type="text" placeholder="Cebolla"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-input type="text" placeholder="Pollo"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-input type="text" placeholder="Papa"></ion-input>
+          </ion-item>
+          
+        </ion-list>
+        
+      </ion-card-content>
+    </ion-card>
+        
+      <ion-card-content>
+        <ion-card>
+            <ion-item>
+                <ion-label>Rabano</ion-label>
+                <ion-checkbox color="dark" checked="true"></ion-checkbox>
+              </ion-item>
+              
+              <ion-item>
+                <ion-label>Ajo</ion-label>
+                <ion-checkbox disabled="true"></ion-checkbox>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label>Lechuga</ion-label>
+                  <ion-checkbox disabled="true"></ion-checkbox>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Pollo</ion-label>
+                    <ion-checkbox disabled="true"></ion-checkbox>
+                  </ion-item>
+
+                  <ion-item>
+                      <ion-label>Sal</ion-label>
+                      <ion-checkbox disabled="true"></ion-checkbox>
+                    </ion-item>
+                    
+                  </ion-card>
+                  <hr>
+                  <hr>
+                  <ion-card>
+                        <ion-item>
+                            <ion-label fixed></ion-label>
+                            <ion-input type="text" placeholder="Cuantas porciones son?" class="titulo-producto"></ion-input>
+                          </ion-item>
+                          <ul>
+                              <ion-item>
+                                  <ion-input type="text" placeholder="2"></ion-input>
+                                </ion-item>
+                                <ion-item>
+                                    <ion-input type="text" placeholder="3"></ion-input>
+                                  </ion-item>
+                          </ul>
+                          
+                  </ion-card>
+                  <ion-card>
+                      <ion-item>
+                          <ion-label fixed></ion-label>
+                          <ion-input type="text" placeholder="Cuanto quieres gastar?" class="titulo-producto"></ion-input>
+                        </ion-item>
+
+                        <ul>
+                            <ion-item>
+                                <ion-input type="text" placeholder="Menos de $500"></ion-input>
+                              </ion-item>
+                              <ion-item>
+                                  <ion-input type="text" placeholder="Menos de $1000"></ion-input>
+                                </ion-item>
+                        </ul>
+
+                </ion-card>
+
+                <ion-card>
+                    <ion-item>
+                        <ion-label fixed></ion-label>
+                        <ion-input type="text" placeholder="Ingresa tu Direccion" class="titulo-producto"></ion-input>
+                      </ion-item>
+                    </ion-card>
+                    
+                    <ion-card>
+                      
+                      
+                    </ion-card>
+
+      <ion-card>
+          <ion-button expand="full" color="secondary">Ir al Ticket!</ion-button>
+          
+      </ion-card>
+                  
+
+                      
+
+
+              </ion-card-content>  
+    </ion-content>
+        
+        
+        <!-- <div class="ion-padding">
+          The world is your oyster.
+    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  </div>
+</ion-content> -->
